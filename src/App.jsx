@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 import './App.css'
 import phrases from '/src/phrases.json'
 function App() {
@@ -8,7 +7,7 @@ function App() {
   const [ phrase, setPhrase ] = useState([])
   const images = [ "/imagenes/fondo1.jpg", "/imagenes/fondo2.jpg", "/imagenes/fondo3.jpg", "/imagenes/fondo4.jpg" ]
 
-  const phrasess = "/src/phrases.json"
+  const phrasess = phrases
   let data;
   const randomNum = () => Math.floor(Math.random() * data.length ) + 1;
 
