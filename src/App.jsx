@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
-
+import "./src/phrases.json"
 function App() {
 
   const [ index, setIndex ] = useState(0)
