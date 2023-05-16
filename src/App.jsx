@@ -8,7 +8,7 @@ function App() {
   const [ phrase, setPhrase ] = useState([])
   const images = [ "/imagenes/fondo1.jpg", "/imagenes/fondo2.jpg", "/imagenes/fondo3.jpg", "/imagenes/fondo4.jpg" ]
 
-  let phrasess = '/src/phrases.json'
+  let phrasess = './src/phrases.json'
   let data;
   const randomNum = () => Math.floor(Math.random() * data.length ) + 1;
 
@@ -45,8 +45,8 @@ function App() {
     <>
       <div className="background" style = {backStyle}>
       <div className='box'>
-        <ReactMarkdown className='phrase'>{phrase.phrase}</ReactMarkdown>
-        <ReactMarkdown className='author'>{phrase.author}</ReactMarkdown>
+        <h1 className='phrase'>{phrase.phrase}</h1>
+        <h1 className='author'>{phrase.author}</h1>
       </div>
       <button
       onClick={() => {changeIndex(), getPhrase()}}
