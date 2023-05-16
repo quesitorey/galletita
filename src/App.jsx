@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import phrases from '/src/phrases.json'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
   const [ phrase, setPhrase ] = useState([])
   const images = [ "/imagenes/fondo1.jpg", "/imagenes/fondo2.jpg", "/imagenes/fondo3.jpg", "/imagenes/fondo4.jpg" ]
 
-  const phrasess = '/src/phrases.json'
+  let phrasess = '/src/phrases.json'
   let data;
   const randomNum = () => Math.floor(Math.random() * data.length ) + 1;
 
